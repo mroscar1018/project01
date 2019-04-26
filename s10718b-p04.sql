@@ -28,7 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `cart` (
   `cartid` int(11) NOT NULL,
-  `sid` varchar(11) NOT NULL,
+  `sid` int(10) NOT NULL,
   `qty` smallint(6) NOT NULL,
   `ordtime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `ip` varchar(30) NOT NULL
@@ -39,9 +39,7 @@ CREATE TABLE `cart` (
 --
 
 INSERT INTO `cart` (`cartid`, `sid`, `qty`, `ordtime`, `ip`) VALUES
-(197, '9', 2, '2019-04-03 08:48:06', '192.168.50.8'),
-(196, '3', 50, '2019-04-03 08:48:14', '192.168.50.8'),
-(199, '12', 1, '2019-04-18 12:07:59', '::1');
+
 
 -- --------------------------------------------------------
 
