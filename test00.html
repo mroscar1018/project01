@@ -1,0 +1,37 @@
+<html>
+<head>
+	</head>	
+<body>
+<form id="form1" action="list.php" method="post">
+    <div class="tt">
+      <h2>意見回饋</h2>
+    </div>
+    <div id="fg-1">
+      <div class="line form-group row">
+		  <span class="col-12 col-lg-2">姓名:</span>
+      <input class="col-12 col-lg-10" type="text" name="username" required></div>
+    <div class="line form-group row">
+      <span class="col-12 col-lg-2">性別:</span>
+      <select class="col-12 col-lg-10" name="jt" required>
+        <option class="col-12 col-lg-10" value="女">女</option>
+        <option class="col-12 col-lg-10" value="男">男</option>
+      </select> </div>
+      <div class="line form-group row">
+        <span class="col-12 col-lg-2">用餐日期:</span>
+        <input class="col-12 col-lg-10" type="date" name="ordertime">
+      </div>
+      <div class="line form-group row">
+		  <span class="col-12 col-lg-2">聯繫電話:</span>
+        <input class="col-12 col-lg-10" type="tel" name="mobile">      </div>
+          <div class="line form-group row">
+              <span class="col-12 col-lg-2">建議內容:</span>
+             <textarea class="col-12 col-lg-10" name="special" rows="7" cols="50%" maxlength="500" placeholder="建議內容" required></textarea>
+          </div>
+          <input type="hidden" name="MM_insert" value="form1" />
+            <input class="col-12 btn btn-danger b" name="button" type="submit" value="送出" />
+        </div>
+  
+      </form>
+
+</body>
+</html>

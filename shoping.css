@@ -1,0 +1,49 @@
+@charset "utf-8";
+body{
+	font-family: "標楷體";
+	font-weight: 500;
+	font-size: 20px;
+}
+#Bshop {
+	height: auto;
+	width: 80%;
+	margin-right: auto;
+	margin-left: auto;
+}
+#Shoping {
+    height: auto;
+    border: medium;
+    width: 100%;	
+}
+#Simg {
+	height: auto;
+	width: 80%;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.shop_content {
+	float: left;
+	display: inline-block;
+	height: auto;
+	width: 50%;
+}
+.clear {
+	clear: both;
+}
+#otherthing {
+	
+	height:auto;
+	width: 100%;
+	display:inline-flex;
+	flex-wrap: wrap;
+}
+.Otherthings {
+	
+	margin: 15px;
+	float: left;
+	height: 270px;
+	width: 250px;
+	background-color:#F0B190;
+}
+

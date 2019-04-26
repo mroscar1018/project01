@@ -1,0 +1,50 @@
+@charset "utf-8";
+*{
+	margin:0;
+	padding:0;
+}
+#Bcokntent {
+	width:80%;
+	margin-right: auto;
+	margin-left: auto;	
+}
+#muemheader {
+	height: auto;
+	width: 100%;
+	text-align: center;
+}
+.class {
+	width: 100%;
+}
+.animate{
+	color: #A73333;
+	}	
+.animate:hover{
+		animation-name: bounceIn ;
+		animation-duration: 1s;
+	}
+.mulist{
+	background-color: #FFC;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	}
+
+.clearboth {
+	clear: both;
+}
+#productlist {
+	margin-top:20px;
+	height: auto;
+	width: 100%;
+}
+.floatright {
+  float: right;
+}
+body {
+	font-family: "標楷體";
+	font-weight: 700;
+	color: #666;
+	font-size: 18px;
+	font-style: normal;
+}	
