@@ -1,0 +1,131 @@
+header {
+  background-color: #fff;
+  position: fixed;
+  top: -150px;
+  width: 100%;
+  height: auto;
+  transition: top 0.4s ease-in-out;
+
+}
+
+.hideUp header {
+  top: 0px;
+}
+
+#gheader {
+
+  box-shadow: 0 3px 5px #cccccc;
+
+  z-index: 10000;
+
+}
+
+
+#Blogo{
+  width: 400PX;
+  margin: 0px auto;
+  text-align: center;
+  line-height: 100px;
+
+}
+#logoP {
+  width: 400px;
+  height: 150px;
+  display: inline-block;
+  vertical-align: middle;
+  z-index:2000000;
+  
+}
+
+#logoin {
+  margin-right: 20px;
+}
+
+.gNav {
+  list-style-type: none;
+  font-size: 18px;
+  padding: 20px 0;
+  position: relative;
+  margin-bottom: 0;	
+
+
+}
+.mNav {
+  list-style-type: none;
+  font-size: 18px;
+  padding: 0;
+  position: relative;
+  margin-bottom: 0;	
+
+
+}
+li.nav00 {
+  display: inline;
+  padding: 0 15px 0 20px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 10px;		
+	  
+}
+li.nav01{
+	padding-left: 85px;
+}
+li.navi {
+  display: inline;
+  border-right: 1px solid #777777;
+
+}
+li.navm {
+  display: inline;
+  border-bottom: 2px solid #777777
+
+}
+li.navm a {
+  padding: 0 9px;
+  color: #666;
+}
+li.navi a {
+  padding: 0 10px;
+  color: #666;
+}
+li.navi a:hover{
+  color: #000;
+}
+
+li.navi a:link {
+  text-decoration: none;
+}
+li.tracking-in-contract a:link {
+  text-decoration: none;
+}
+li.tracking-in-contract a:hover {
+  -webkit-animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          animation: tracking-in-contract 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+          color: #000;
+}
+.floatright {
+  float: right;
+}
+
+.noborder {
+  border-right: none !important ;
+
+}
+i {
+  font-size: 20px;
+  padding-right: 10px;
+}
+#nav00 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.nav06{
+	padding: 20px;
+	margin-top: -20px; 
+	
+}
+*{
+	margin: 0;
+	padding: 0;
+}

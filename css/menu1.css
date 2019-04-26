@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h2{
+	text-align:center;
+	}
+#Bmenu {
+	background-color: #00F;
+	text-align:center;
+	height: 1350px;
+	width: 100%;
+}
+#tmenu {
+	height: 100px;
+	width: 100%;
+}
+#list {
+	background-color: #C90;
+	height: 60px;
+	width: 70%;
+	margin:0 auto;
+}
+#Bframe {
+	background-color: #3C0;
+	height: 1000px;
+	width: 70%;
+	margin:0 auto;
+}
+#Bframe .food{
+	margin: 35px ;
+	padding: 5px;
+}
+#Bmenu #list ul {
+	width:100%;
+	list-style-type: none;
+	display: flex;
+}
+#Bmenu #list ul li {
+	width: 25%;
+	height: 100%;
+	line-height: 60px;
+	text-align:center;
+}
+
+.food{
+  display:inline-block;
+  text-align:center;
+}

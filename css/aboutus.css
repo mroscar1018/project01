@@ -1,0 +1,158 @@
+@charset "utf-8";
+a {
+	color:black;
+}
+/*header*/
+.title{
+    background-image: url( "../images/abus-bg.jpg");
+    width: 100%;
+    height: 300px;
+    position:relative;
+	background-size:100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+	opacity: 0.8;
+}
+.title h1{
+	text-align: center;
+	color:white;
+}
+
+
+/*content*/
+.content{
+    width:auto;
+    height:auto;
+    line-height: 50px;
+    text-align: center;
+	background-color:rgba(255,255,255,0.1);
+}
+.content_bg{
+	width: 60%;
+	height: 80%;
+	background-color:rgba(0,0,0,0.05);
+	margin-top:40px;
+	margin-bottom:40px;
+	box-shadow:4px 4px 12px 4px rgba(20%,20%,40%,0.5);
+	
+}
+.fadeleft_bg{
+width: 200px;
+height:50px;
+background-image: url("../images/abus_fadein.jpg");
+ opacity:0.8;
+/*background-color:rgba(78,25,26,0.4);*/
+-webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+display: block;
+position: absolute;
+left:20%;
+z-index: -1;
+}
+.faderight_bg{
+width: 200px;
+height:50px; 
+background-image: url("../images/abus_fadein.jpg");
+ opacity:0.8;
+	/*background-color:rgba(116,243,237,1.00);*/
+-webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+display: block;
+position: absolute;
+z-index: -1;
+right:20%;
+	
+}
+.content .content_bg .info h2{
+	font-weight: bold;
+	margin:8px;
+}
+.content h4{
+	color:rgba(115,29,30,1.00);
+	font-weight:bold;
+}
+.info{
+	margin: 15 0;
+}
+.img_contrl{
+	width: 220px;
+	height: 300px;
+}
+.origin{
+	float:left;
+}
+.manager{
+	float:right;
+}
+.purpose{
+	float:left;
+}
+.address{
+	float: right;
+}
+.clearboth{
+	clear: both;
+}
+
+.btn-amt {
+transition: all 0.5s;
+position: relative;
+/*background-color:gainsboro;*/
+}
+
+.btn-amt:before{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+border: 1px solid rgba(255,255,255,0.5);
+transition: all 0.3s;
+}
+.btn-amt:hover:before{
+opacity: 0;
+transform: scale(1.2,1.2);
+}
+.btn-amt:after{
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+z-index: 1;
+opacity: 0;
+background-color: rgba(255,255,255,0.3);
+transition: all 0.3s;
+transform: scale(0.5,0.5);
+}
+.btn-amt:hover:after{
+opacity: 1 ;
+transform: scale(1,1);
+}
+
+.content_abus p{
+	font-family: 'Adobe 繁黑體 Std B', Arial, helvetica;
+	font-size: 18px;
+	text-indent: 2em;
+}
+/*footer*/
+.footer{
+	background-color:black;
+	bottom:0;
+}
+.link{
+	text-align: center;
+	margin:10 0px;
+	color:white;
+}
+
+.footer_btn {
+	font-size:48px;
+	margin:0 15px;
+}
+.Acontent{
+	margin-top: 20px; 
+}
