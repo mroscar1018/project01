@@ -280,5 +280,17 @@ a .alink a:hover {
 	margin-top: 400px;
 }
 
+.loginform{
+	width: 500px;
+	height: 250px;
+}
 
-
+.bg-color {
+	background-color: #FFFCFC;
+	opacity: 0.5;
+}
+.min-high{
+	min-height: 400px;
+	height: 600px;
+	width: 100%;
+}

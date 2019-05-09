@@ -20,16 +20,9 @@ a {
 
 
 /*content*/
-.content{
-    width:auto;
-    height:auto;
-    line-height: 50px;
-    text-align: center;
-	background-color:rgba(255,255,255,0.1);
-}
 .content_bg{
-	width: 60%;
-	height: 80%;
+	width: 80%;
+	height: auto;
 	background-color:rgba(0,0,0,0.05);
 	margin-top:40px;
 	margin-bottom:40px;
@@ -78,18 +71,8 @@ right:20%;
 	width: 220px;
 	height: 300px;
 }
-.origin{
-	float:left;
-}
-.manager{
-	float:right;
-}
-.purpose{
-	float:left;
-}
-.address{
-	float: right;
-}
+
+
 .clearboth{
 	clear: both;
 }
@@ -133,11 +116,7 @@ opacity: 1 ;
 transform: scale(1,1);
 }
 
-.content_abus p{
-	font-family: 'Adobe 繁黑體 Std B', Arial, helvetica;
-	font-size: 18px;
-	text-indent: 2em;
-}
+
 /*footer*/
 .footer{
 	background-color:black;
@@ -154,5 +133,44 @@ transform: scale(1,1);
 	margin:0 15px;
 }
 .Acontent{
-	margin-top: 20px; 
+	padding: 30px 20px;
+	height: 300px !important;
+}
+.Acontent1{
+	padding: 40px 10px;
+	text-align: left;
+	height: 300px !important;
+}
+.Acontent2{
+	padding: 20px;
+}
+.usimg{
+	width: 100%;
+	height: 300px;
+ 	background-image:url("../images/42058525_325179288057480_3563483762186518528_n.jpg");
+	overflow: hidden;
+	background-size: cover;
+	
+}
+.usimg1{
+	width: 100%;
+	height: 300px;
+ 	background-image:url("../images/top2.jpg");
+	overflow: hidden;
+	background-size: cover;
+	
+}
+.usimg2{
+	width: 100%;
+	height: 300px;
+ 	background-image:url("../images/46844876_353815998527142_1727395697096916992_n.jpg");
+	overflow: hidden;
+	background-size: cover;
+}
+.usimg3{
+	width: 100%;
+	height: 300px;
+ 	background-image:url("../images/top3.jpg");
+	overflow: hidden;
+	background-size: cover;
 }
