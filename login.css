@@ -1,7 +1,7 @@
 body{
   background-size: 100%;
   background-repeat: no-repeat;
-  background-color: #74992e;
+  background-color:#FFE4AA;
 }
 #login_frame{
   width: 400px;
@@ -32,7 +32,7 @@ vertical-align: middle;
   line-height: 28px;
   text-align: center;
   color: white;
-  background-color: #3CD8FF;
+  background-color:#FF6366;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -51,7 +51,7 @@ height: 28px;
 line-height: 28px;
 text-align: center;
 color: white;
-background-color: #3BD9FF;
+background-color:#FF6366;
 border-radius: 6px;
 border: 0;
 margin-left:auto;

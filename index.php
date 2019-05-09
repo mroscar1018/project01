@@ -62,7 +62,7 @@ $totalRows_rsClass = mysql_num_rows($rsClass);
 		var Mybody = document.getElementsByTagName('body'), lastScrollY = 350;
 		window.addEventListener("scroll", function() {
 		  var st = this.scrollY;
-		  // 判斷是向上捲動，而且捲軸超過 200px
+		  // 判斷是向上捲動，而且捲軸超過 300px
 		  if (st > lastScrollY) {
 			Mybody[0].classList.add("hideUp");
 		  } else {
@@ -189,12 +189,9 @@ $totalRows_rsClass = mysql_num_rows($rsClass);
    
       </div>
     </div>
-  </div>
+  </div>s
   
 </div>
-
-
-  
 
 
   <div id="footer" class="container-fluid background photo3">

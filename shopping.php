@@ -46,8 +46,8 @@ if($totalRows_cart>0){
 	
 	$row_cart = mysql_fetch_assoc($Result1);
 	$all_qty=$row_cart['qty']+$_POST['qty'];
-	if($all_qty > 100){
-		$all_qty=100;
+	if($all_qty > 20){
+		$all_qty=20;
 		$errcode="1";
 		}
 	$insertSQL = sprintf("UPDATE `s10718b-p04`.`cart` SET `qty` = '%s' WHERE `cart`.`cartid` = %s;",GetSQLValueString($all_qty, "int"),GetSQLValueString($row_cart['cartid'], "int"));		
@@ -109,13 +109,16 @@ if($totalRows_cart>0){
             </table>
           </div>
           <div class="shop_content">
-            <table width="100%" border="0" class="text-center trpadding">
+            <table width="100%" border="0" class="text-center trpadding p-4">
 			 <tr>
-              <td><input class="btn btn-danger" name="tobuy" type="submit" value="加入購物車" target="_self" >
+              <td>
+				  <input class="btn btn-danger" name="tobuy" type="submit" value="加入購物車" target="_self" >
             	</td>
 				 </tr>
-					<td></td>
+					<tr>
+						<td style="height: 20px"></td>
 					</tr>
+					
 					<tr>
 						<td>
 						  <a class="btn btn-danger" href="javascript:;" onclick="history.go(-1)">回上一頁</a>
@@ -157,7 +160,7 @@ if($totalRows_cart>0){
 	</div>
 	  
 </div>
-	<div class="clear"></div>
+	<div class="clearboth"></div>
 <?php require_once('subject.php'); ?>
 <?php require_once('footer.php'); ?>	
 

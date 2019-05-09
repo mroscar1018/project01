@@ -77,11 +77,7 @@ if (isset($_POST['uname'])) {
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>登入頁面</title>
-  <link rel="stylesheet" type="text/css" href="login.css"/>
+<?php require_once('header.php'); ?>
 <script type="text/javascript">
 function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
@@ -147,19 +143,36 @@ function YY_checkform() { //v4.65
   </script>
 </head>
 <body>
-  <div id="login_frame">
-    <h2 id="text" onfocus="YY_checkform('tt','username','#username','6','Field \'username\' is not valid.','password','#password','6','Field \'password\' is not valid.');return document.MM_returnValue">會員訂單查詢</h2>
-    <form ACTION="<?php echo $loginFormAction; ?>" name="tt" method="POST">
-    <p><label class="label_input">帳號:</label><input type="text" name="uname" id="username" class="text_field"/></p>
-    <p><label class="label_input">密碼:</label><input type="text" name="pw1" id="password" class="text_field"/></p>
-    <div id="login_control">
-    <input name="submit" type="submit" id="btn_login" value="登入"/>
+<?php require_once('navbar.php'); ?>
+  <div class="container-fluid bg-warning ">
+<div class="row text-center">
+	<div class="col-12 mt-5">
+  <h2 onfocus="YY_checkform('tt','username','#username','6','Field \'username\' is not valid.','password','#password','6','Field \'password\' is not valid.');return document.MM_returnValue">會員訂單查詢</h2></div>
+	
+    <form class="loginform form-group mx-auto bg-light rounded mt-2" ACTION="<?php echo $loginFormAction; ?>" name="tt" method="POST">
+    	<div class="mt-5 mb-2">
+		<label class="col-2">姓名:</label><input type="text" name="uname" id="username" placeholder="請輸入姓名" class="col-8 bg-white"/>
+			</div>
+		<div class="mt-4 md-5">
+    		<label class="col-2">密碼:</label><input type="password" name="pw1" id="password" placeholder="請輸入密碼" class="col-8"/>
+		</div>
+    <div class="mt-3 mb-5">
+   	
+   	
+    <input class="btn-danger btn-lg" name="submit" type="submit" id="btn_login" value="訂單查詢"/>
     </div>
     </form>
+		
 </div>
+	  </div>
+	<div class="min-high bg-warning">
+	</div>
+	<?php require_once('subject.php'); ?>
+<?php require_once('footer.php'); ?>
 <?php 
 if(isset($_GET['err'])){ ?>
 <script type="text/javascript">alert('帳號或密碼錯誤!!');</script>
 <?php } ?>
+
 </body>
 </html>

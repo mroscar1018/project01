@@ -38,7 +38,7 @@ if ((isset($_SERVER['REMOTE_ADDR'])) && ($_SERVER['REMOTE_ADDR'] != "")) {
   mysql_select_db($database_rsClass, $rsClass);
   $Result1 = mysql_query($deleteSQL, $rsClass) or die(mysql_error());
 
-  $deleteGoTo = "botsmeal.php";
+  $deleteGoTo = "cart.php";
   if (isset($_SERVER['QUERY_STRING'])) {
     $deleteGoTo .= (strpos($deleteGoTo, '?')) ? "&" : "?";
     $deleteGoTo .= $_SERVER['QUERY_STRING'];
